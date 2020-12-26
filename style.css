@@ -1,0 +1,138 @@
+body {
+  font-size: 15px;
+  background: url("./images/bg-pattern-top-desktop.svg"), url("./images/bg-pattern-bottom-desktop.svg"), hsl(0, 0%, 100%);
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+div.leftSide-col {
+    margin-left: 20%;
+}
+div.rightSide-col {
+    margin-left: 10%;
+}
+
+#starz {
+  background-color: hsl(300, 24%, 96%);
+  color: hsl(300, 43%, 22%);
+  padding: 10px;
+  margin: 5px;
+  font-family: 'Spartan', sans-serif;
+  word-spacing: 0.1em;
+  width: 100%;
+  font-weight: 700;
+}
+
+
+h1.products {
+  color: hsl(300, 43%, 22%);
+  Font-size: 40px;
+  font-weight: 800;
+  font-family: 'Spartan', sans-serif;
+}
+
+p.small {
+  color: hsl(303, 10%, 53%);
+  margin: 5px;
+}
+
+.container {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  width: 100%;
+}
+
+
+.box {
+  margin: 24px;
+  padding: 36px 24px 40px 24px;
+  background: hsl(300, 43%, 22%);
+  color: hsl(258, 18%, 96%);
+  font-size: 12px;
+  word-spacing: 0.1em;
+  border-radius: 7px;
+  font-family: 'Spartan', sans-serif;
+} 
+  
+.box > img {
+  Border-radius: 50%;
+  float: left;
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+.verified {
+  color: hsl(303, 10%, 53%);
+  font-size: 15px;
+}
+
+.na {
+  font-size: 15px;
+}
+
+.attribution {
+  font-size: 15px;
+  font-family: 'Spartan', sans-serif;
+  text-align: center;
+  display: block;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  animation-name: fade-in;
+  animation-duration: 20s;
+}
+
+
+@keyframes fade-in {
+  From {
+    background-color: #4a3623;
+  }
+  to {
+    background-color: #eeb47c;
+  }
+}
+
+@media screen and (max-width: 680px) {
+    div.leftSide-col,
+    div.rightSide-col {
+        margin: 15px;
+    }
+    div.box {
+        padding: 5px;
+        display: block;
+    }
+    
+    .col-6, 
+    .col-4 {
+        width: 100%;
+        margin: 0;  
+    }
+
+}
